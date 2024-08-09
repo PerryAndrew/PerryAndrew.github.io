@@ -1,0 +1,53 @@
+#chessboard {
+    width: 480px;
+    height: 480px;
+    border: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .square {
+    width: 60px;
+    height: 60px;
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 60px;
+    font-size: 30px;
+    cursor: pointer;
+  }
+
+  .white {
+    background-color: #f0d9b5;
+  }
+
+  .black {
+    background-color: #b58863;
+  }
+
+  .piece {
+    font-family: 'Arial', sans-serif;
+  }
+
+  .piece.king:before {
+    content: '\2654';
+  }
+
+  .piece.queen:before {
+    content: '\2655';
+  }
+
+  .piece.rook:before {
+    content: '\2656';
+  }
+
+  .piece.bishop:before {
+    content: '\2657';
+  }
+
+  .piece.knight:before {
+    content: '\2658';
+  }
+
+  .piece.pawn:before {
+    content: '\2659';
+  }
